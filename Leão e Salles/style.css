@@ -1,0 +1,587 @@
+
+
+/*-------------HEADER DO SITE-------------*/
+
+header {
+	background: #1c1c1c;
+}
+
+.caixa_logo {
+	background: #1c1c1c;
+	width: 1080px;
+	padding: 45px 0px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.barra_navegação {
+	width: 100%;
+	background: #705e5e;
+	position: relative;
+	padding: 18px;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+nav a {
+	padding: 18px 30px 18px 30px;
+	text-transform: uppercase;
+	background: #705e5e;
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+	font-size: 14px;
+	transition: 400ms;
+}
+
+nav a:hover{
+	background: white;
+	color: #705e5e;
+	font-weight: bold;
+}
+
+
+/*---------------------------------------------------------CONTEÚDO DO SITE----------------------------------------------------*/
+
+
+/*----------------------HOME--------------------*/
+
+body {
+	background: #d6d0c5
+}
+
+.slideshow-container {
+	max-width: 100%;
+	position: relative; /*remover para teste no final*/
+	margin: auto;		/*remover para teste no final*/
+}
+
+.mySlides {
+	display: none;
+}
+
+.prev, .next {
+	cursor:pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding-left: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right:0;
+	border-radius: 3px 0 0 3px;
+}
+
+.fade {
+	-webkit-animation-name:fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .2}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .2}
+	to {opacity: 1}
+}
+
+
+
+
+.banner {
+	width: 100%;
+}
+
+
+
+.apresentação {
+	width: 1080px;
+	margin: 2em auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.coluna {
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+
+}
+
+.fileira:after {
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+#dados_contato {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #4f2020;
+	font-size: 14px;
+}
+
+#dados_contato:before {
+	content:"– "
+}
+
+em, #dados_contato:before{
+	color: #000344;
+}
+
+.coluna h2 {
+	font-weight: bold;
+	font-size: 22px;
+	color: #333333;
+	text-transform: uppercase;
+	padding-bottom: 0.5em;
+}
+
+.coluna p {
+	line-height: 1.5;
+	color: #4f2020;
+	font-size: 14px;
+	padding-top: 1em;
+}
+
+#saiba_mais {
+	width: 110px;
+	height: 35px;
+	margin: 1em 0;
+	background: #7d7373;
+	border: 0;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: 250ms;
+	float: top;
+	display: block;
+	box-shadow: 0px 0px 3px #000000;
+
+}
+
+#saiba_mais:hover{
+	background: white;
+	color: #00012d;
+	text-decoration: underline;
+}
+
+.thumb_pdf{
+	display: block;
+	float: left;
+}
+
+.coluna #titulo_item{
+	line-height: 1.5;
+	font-weight: bold;
+	color: #4f2020;
+	font-size: 14px;
+	margin-left: 1.5em;
+	display: inline-block;
+}
+
+a.link{
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 1.35em;
+	margin-top: 1em;
+	font-size: 14px;
+	color:#070044;
+}
+
+
+hr.dashed {
+  border-top: 3px dashed #aaa;
+  width: 1080px;
+}
+
+
+.coluna_tripla{
+
+	margin: 2em auto;
+	width: 1080px;
+}
+
+.coluna_direito{
+	float:left;
+	width: 33.33%
+}
+
+.fileira_direito:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.coluna_direito h2 {
+	font-weight: bold;
+	font-size: 22px;
+	color: #333333;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+
+.coluna_direito p {
+	line-height: 1.5;
+	color: #4f2020;
+	font-size: 14px;
+	padding: 1em 10px;
+	text-align: justify;
+}
+
+.fa-handshake {
+	margin-bottom: .4em;
+	font-size: 60px;
+	text-align: right;
+	padding-left: 2.5em;
+	color: #333;	
+}
+
+.fa-users {
+	margin-bottom: .4em;
+	font-size: 60px;
+	text-align: right;
+	padding-left: 2.5em;	
+	color: #333;
+}
+
+.fa-book {
+	margin-bottom: .4em;
+	font-size: 60px;
+	text-align: right;
+	padding-left: 2.5em;	
+	color: #333;
+}
+
+.coluna_direito #saiba_mais {
+	margin-left: 10px;
+
+}
+
+
+/*----------------ÁREAS DE ATUAÇÃO----------------------*/
+
+.page-container {
+	width: 1080px;
+	margin:35px auto;
+}
+
+.pagina-areas p {
+	line-height: 1.5;
+	color: #4f2020;
+	font-size: 14px;
+	padding: 0 10px 2em 16em;
+	text-align: justify;
+	margin-left: auto;
+
+}
+
+#titulo-areas {
+	font-weight: bold;
+	font-size: 22px;
+	color: #444444;
+	padding: 1em 0 1em 10em;
+	text-align: left;
+}
+
+.banner-areas-de-atuação {
+	width: 1080px;
+	margin: auto;
+	display: block;
+}
+
+.header-atuação {
+	background:#ececec;
+	}
+
+.header-atuação h2 {
+	font-weight: bold;
+	font-size: 22px;
+	color: #444444;
+	padding: 1.5em 0 1em 0;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.header-atuação p {
+	line-height: 1.5;
+	color: #4f2020;
+	font-size: 14px;
+	padding: 0 5px 2em 5px;
+	text-align: center;
+
+}
+
+.area1, .area2, .area3, .area4, .area5,.area6,.area7 {
+	margin-bottom: 1em;
+}
+
+
+.area1 .fa-handshake, .area2 .fa-gavel, .area3 .fa-users, .area4 .fa-university, .area5 .fa-book, .area6 .fa-file, .area7 .fa-balance-scale {
+	color: #333;
+	position: absolute;
+}
+
+
+
+.area1 .fa-handshake {
+	font-size: 115px;	
+	padding: .5em 0;
+
+}
+
+.area2 .fa-gavel {
+	font-size: 110px;	
+	padding: .5em 0 0 .2em;
+
+}
+
+.area3 .fa-users {
+	font-size: 110px;	
+	padding: .4em 0 0 .1em;
+
+}
+
+.area4 .fa-university {
+	font-size: 130px;	
+	padding-left: .1em;
+
+}
+
+.area5 .fa-book {
+	font-size: 110px;	
+	padding: .6em 0 0 .25em;
+
+}
+
+.area6 .fa-file {
+	font-size: 120px;	
+	padding: .15em 0 0 .3em;
+
+}
+
+.area7 .fa-balance-scale {
+	font-size: 110px;	
+	padding: .15em;
+
+}
+
+
+/*-----------------------------EQUIPE----------------------------*/
+
+
+.mural-equipe {
+	width: 94%;
+	transition: 300ms;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.mural-equipe:hover{
+	transform: scale(0.90);
+
+}
+
+
+.caixa-titulo {
+	background: #ececec;
+	width: 1075px;
+	margin: 0 auto;
+}
+
+
+.caixa-titulo h2 {
+	padding: 12px 0 12px 8px;
+	font-weight: bold;
+	color: #333333;
+	font-size: 27px;
+}
+
+
+.equipe .coluna_tripla_equipe {
+	padding: 0;
+	margin-left: 10px;
+	margin-top: 10px;
+
+}
+
+
+.equipe h3 {
+	color: #444444;
+	font-weight: bold;
+	font-size: 22px;
+	margin: 22px 0;
+	
+}
+
+.link-perfil {
+	color: #000344;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 13.5px;
+	padding: 0;
+}
+
+.coluna_direito_equipe{
+	float:left;
+	width: 33.33%;
+	padding-bottom: 1em;
+}
+
+
+/*-------------------------PERFIL----------------------*/
+
+
+.coluna-equipe-esq {
+	float: left;
+	width: 41%;
+  }
+  
+.coluna-equipe-dir {
+	float: left;
+	width: 59%;
+  }
+.fileira-equipe:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+hr.linha-divisão {
+	border-top: 1px dashed grey;
+  }
+
+.pagina-perfil p {
+	line-height: 1.5;
+	color: #4f2020;
+	font-size: 14px;
+	padding-bottom: 1em;
+	text-align: left;
+}
+
+.titulo-perfil {
+	color: #444444;
+	font-weight: bolder;
+	font-size: 26px;
+	margin: 30px 0;
+}
+
+.foto-perfil {
+	padding-left: 10px;
+}
+
+.coluna-equipe-dir h3 {
+	color: #444444;
+	font-weight: bolder;
+	font-size: 22px;
+	margin: 20px 0;
+}
+
+.coluna-equipe-dir {
+	padding-left: 10px;
+}
+
+
+
+.coluna-equipe-dir em{
+	color: #444444;
+	font-weight: bold;
+}
+
+.fa-envelope {
+	color: #444444;
+	font-size: 30px;
+	position: relative;
+
+}
+
+.coluna-equipe-dir a{
+	text-decoration: none;
+	color: #000344;
+	font-size: 14px;
+	position: absolute;
+	padding: 8px 0 0 8px;
+	font-weight: bold;
+}
+
+.email-perfil{
+	margin: 30px 0;
+}
+
+
+.coluna-equipe-dir li{
+	line-height: 1.5;
+	color: #4f2020;
+	font-size: 14px;
+	padding-bottom: 1em;
+	text-align: left;
+}
+
+.coluna-equipe-dir li:before {
+	content: "• ";
+}
+
+
+
+
+/*------------------------------------------------------------------------------FOOTER DO SITE--------------------------------------------------------------*/
+
+
+footer{
+	background: #151515;
+	width: auto;
+	height: 200px;
+	clear: both;
+}
+
+
+footer p{
+	color: #aaaaaa;
+	text-align: center;
+	padding-top: 2em;
+	font-size: 12px;
+}
+
+footer #disclamer {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+footer a{
+	text-decoration: none;
+	color: lightgrey;
+	font-weight: bold;
+}
+
+#link_leãosalles {
+	text-decoration: underline;
+	color:white;
+}
+
+
+
+
+
+
+
+

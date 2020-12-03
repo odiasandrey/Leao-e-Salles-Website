@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Escritório Leão e Salles</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<body style="font-family: 'Montserrat', sans-serif; "></body>
+		<script src="https://kit.fontawesome.com/69de32d511.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="caixa_logo">
+				<img class="logo_header" src="logo_leaoesalles.png">
+			</div>
+			<div class="barra_navegação">
+				<nav>
+
+					<a href="home.html">Apresentação</a><a href="areas-de-atuação.html">Áreas de Atuação</a><a href="equipe.html">Equipe</a><a href="atualidades">Atualidades</a><a href="fale-conosco">Fale Conosco</a><a href="links.html">Links</a>
+
+				</nav>
+			</div>	
+		</header>
+
+		<main>	
+
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="banner1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="banner2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="banner3.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="banner4.jpg" style="width:100%">
+				</div>
+
+
+			</div>
+			<br>
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+
+			<!-- <img class="banner" src="hall1.jpg"> -->
+
+			<section class="apresentação">
+				<div class="fileira">
+					<div class="coluna">
+						<img src="letreiro_frente.jpg">
+						<p id="dados_contato"><em>Endereço:</em> Edifício Urbe 14, Trav. 14 de Março, 1155, 10º andar - Bairro do Umarizal - Belém - Pará.</p>
+						<p id="dados_contato"><em>Telefone:</em> (91) 3212-9943.</p>
+						<p id="dados_contato"><em>Email:</em> lsadvogados@leaoesalles.adv.br.</p>
+					</div>
+
+					<div class="coluna">
+						<h2>Apresentação</h2>
+						<p>Leão & Salles Advogados é um escritório de advocacia que se dedica à consultoria e assessoria jurídica referentes aos negócios de seus clientes, no Estado do Pará e no Brasil.</p>
+						<p>Presta assessoria no tocante a uma série de assuntos que requerem orientação jurídica especializada e, sobretudo, oferece auxílio para que alcancem seus objetivos de negócios de maneira eficaz e eficiente.</p>
+						<button id="saiba_mais">Saiba mais...</button>
+
+						<img class="thumb_pdf" src="thumb.jpg">
+
+						<p id="titulo_item">Documento para Download:</p>
+						<a class="link"	href="https://www.leaoesallesadvogados.adv.br/wp-content/uploads/2018/05/leaoesalles_portfolio.pdf">Apresentação Leão & Salles Advogados.</a>
+					</div>		
+				</div>	
+			</section>
+		
+			<hr class="dashed">
+
+			<section class="coluna_tripla">
+				<div class="fileira_direito">
+					<div class="coluna_direito">
+						<i class="far fa-handshake"></i>
+						<h2>Direito Civil e Empresarial</h2>
+						<p>Assessoria e consultoria a empresas privadas. Direitos de posse e de propriedade, obrigações, contratos e responsabilidade civil. Elaboração de pareceres, revisão e elaboração…</p>
+						<button id="saiba_mais">Saiba mais...</button>
+					</div>
+					<div class="coluna_direito">
+						<i class="fas fa-users"></i>
+						<h2>Direito do Trabalho</h2>
+						<p>Assessoria jurídica a empresas e pessoas jurídicas em geral. Dissídios individuais em defesa do empregado ou do empregador, incluídas todas as ações e recursos…</p>
+						<button id="saiba_mais">Saiba mais...</button>
+					</div>
+					<div class="coluna_direito">
+						<i class="fas fa-book"></i>
+						<h2>Direito Administrativo</h2>
+						<p>Representação e defesa em processos administrativos e disciplinares de servidores públicos, em ações de improbidade administrativa, ações populares, mandados…</p>
+						<button id="saiba_mais">Saiba mais...</button>
+					</div>
+				</div>
+				
+			</section>
+
+		</main>
+
+
+		<footer>
+			<p>Leão & Salles Advogados - Copyright © 2017 - 2019. Todos os direitos reservados.</p>
+			<p>Developed by <a href="https://www.linkedin.com/in/rodolfo-morais">Rodolfo Morais</a></p>
+			<p id="disclamer">Esta é uma reprodução do site feita por Andrey Dias Oliveira do site - <a id="link_leaosalles" href="https://www.leaoesallesadvogados.adv.br/">Leão & Salles Advogados</a></p>
+		</footer>
+
+	</body>
+</html>
+
+
+
+<script>
+	
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none"; 
+	}
+
+	slideIndex++;
+
+	if (slideIndex > slides.length) {slideIndex = 1}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+	setTimeout(showSlides, 2000);
+}
+</script>
